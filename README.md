@@ -41,7 +41,7 @@ Before running the project, make sure you have the following installed:
 Start the API locally with Node.js:
 
 ```bash
-npm start
+npm run start
 ```
 
 The API will be available at `http://localhost:3000`.
