@@ -1,8 +1,7 @@
-FROM node:18.17.1-alpine
+FROM node:18.17.1
 WORKDIR /app
-ENV PORT 3000
-ENV MODEL_URL 'https://storage.googleapis.com/submissionmlgc-hax-access/model-in-prod/model.json'
+ENV MODEL_URL 'your_model_url'
 COPY . .
 RUN npm install
-EXPOSE 5000
+EXPOSE 8080
 CMD [ "npm", "run", "start" ]
